@@ -1,0 +1,23 @@
+{
+  "name": "jcore-ai-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Single-source AI skills repository that builds outputs for Claude Code, Cursor, and GitHub Copilot.",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "scripts": {
+    "build": "tsx src/cli.ts build",
+    "check": "tsc --noEmit",
+    "install:claude": "tsx src/cli.ts install --target claude",
+    "install:cursor": "tsx src/cli.ts install --target cursor",
+    "install:copilot": "tsx src/cli.ts install --target copilot"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
