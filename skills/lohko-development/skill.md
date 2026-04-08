@@ -1,6 +1,5 @@
 ---
-
-## name: lohko-development
+name: lohko-development
 title: Lohko Development
 description: Develop and debug JCORE Lohko WordPress blocks and plugin behavior. Use when the task involves Lohko block source files, Gutenberg block metadata/rendering, Timber/Twig templates, or when a JCORE project with a jcore.toml file uses the Lohko plugin.
 targets:
@@ -9,6 +8,7 @@ targets:
   - copilot
 copilot:
   agent: agent
+---
 
 # Lohko Development
 
@@ -58,4 +58,3 @@ copilot:
 - Distinguish source-of-truth files (`src/`) from generated artifacts (`build/`).
 - Mention whether a fix is editor-only, frontend-only, or both.
 - When a change depends on WordPress version behavior, call that out explicitly.
-

@@ -1,16 +1,14 @@
 ---
-
-## name: jcore-project-navigation
-
+name: jcore-project-navigation
 title: JCORE Project Navigation
 description: Navigate and explain a standard JCORE WordPress project generated from the jcore3 template. Use when users ask where code lives, how dependencies are wired, and which workflow to use for development and maintenance, especially when the repository contains a jcore.toml file.
 targets:
-
-- claude
-- cursor
-- copilot
+  - claude
+  - cursor
+  - copilot
 copilot:
-agent: agent
+  agent: agent
+---
 
 # JCORE Project Navigation
 
