@@ -1,5 +1,6 @@
 ---
-name: lohko-development
+
+## name: lohko-development
 title: Lohko Development
 description: Develop and debug JCORE Lohko WordPress blocks and plugin behavior. Use when the task involves Lohko block source files, Gutenberg block metadata/rendering, Timber/Twig templates, or when a JCORE project with a jcore.toml file uses the Lohko plugin.
 targets:
@@ -8,19 +9,19 @@ targets:
   - copilot
 copilot:
   agent: agent
----
 
 # Lohko Development
 
 ## Use this skill when
 
-- The task touches Lohko plugin source in `/home/maxemilian/projects/jcore-lohko`.
-- The user asks to create or modify JCORE WordPress blocks.
+- The task is regarding WordPress block creation in a JCORE project.
+- The user asks to create or modify JCORE WordPress blocks. 
 - The user asks about block rendering, interactivity, or Twig templates.
 - The current repository contains `jcore.toml` and uses Lohko for block implementations.
 
 ## Repository map
 
+- The block plugin is mostly located in `wp-content/plugins/lohko`
 - `lohko.php`: plugin bootstrap, block registration, mime additions, translation setup.
 - `includes/timber.php`: shared Timber context helpers for block rendering.
 - `src/<block>/block.json`: block metadata and asset wiring.
@@ -57,3 +58,4 @@ copilot:
 - Distinguish source-of-truth files (`src/`) from generated artifacts (`build/`).
 - Mention whether a fix is editor-only, frontend-only, or both.
 - When a change depends on WordPress version behavior, call that out explicitly.
+

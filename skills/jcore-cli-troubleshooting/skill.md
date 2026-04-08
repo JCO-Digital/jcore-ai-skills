@@ -1,14 +1,16 @@
 ---
-name: jcore-cli-troubleshooting
+
+## name: jcore-cli-troubleshooting
+
 title: JCORE CLI Troubleshooting
 description: Diagnose and fix common JCORE CLI failures including PATH issues, Docker/runtime errors, permission problems, and project configuration drift. Use when commands fail, environments are inconsistent, or users request debugging help, especially when the repository contains a jcore.toml file.
 targets:
-  - claude
-  - cursor
-  - copilot
+
+- claude
+- cursor
+- copilot
 copilot:
   agent: agent
----
 
 # JCORE CLI Troubleshooting
 
@@ -64,3 +66,4 @@ If still blocked, report:
 - OS and shell
 - Exact command and full error output
 - Whether failure reproduces in a fresh project
+
