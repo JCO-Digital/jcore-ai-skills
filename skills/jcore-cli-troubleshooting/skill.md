@@ -10,7 +10,7 @@ targets:
 - cursor
 - copilot
 copilot:
-  agent: agent
+agent: agent
 
 # JCORE CLI Troubleshooting
 
@@ -66,4 +66,3 @@ If still blocked, report:
 - OS and shell
 - Exact command and full error output
 - Whether failure reproduces in a fresh project
-

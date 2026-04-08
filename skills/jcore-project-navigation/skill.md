@@ -10,7 +10,7 @@ targets:
 - cursor
 - copilot
 copilot:
-  agent: agent
+agent: agent
 
 # JCORE Project Navigation
 
@@ -64,4 +64,3 @@ When orienting in a repository, inspect in this order:
 
 - Always state whether advice is template-default behavior or project-specific override.
 - Call out where settings are expected to diverge (local config, per-project overrides, environment values).
-
