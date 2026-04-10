@@ -44,9 +44,8 @@ copilot:
 
 ### Sync from upstream
 
-1. `jcore pull db|plugins|media|all`
-2. `jcore checksum list`
-3. Re-apply any local overrides if needed
+To sync the DB/Plugin/Media from upstream, use this command: `jcore pull db|plugins|media|all`
+Only run this command if the user explicitly asks for it.
 
 ## Important options
 
