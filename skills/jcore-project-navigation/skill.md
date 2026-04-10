@@ -1,7 +1,7 @@
 ---
 name: jcore-project-navigation
 title: JCORE Project Navigation
-description: Navigate and explain a standard JCORE WordPress project generated from the jcore3 template. Use when users ask where code lives, how dependencies are wired, and which workflow to use for development and maintenance, especially when the repository contains a jcore.toml file.
+description: Navigate and explain a standard JCORE WordPress project. Use when users ask where code lives, how dependencies are wired, and which workflow to use for development and maintenance, especially when the repository contains a jcore.toml file.
 targets:
   - claude
   - cursor
@@ -14,7 +14,7 @@ copilot:
 
 ## Scope
 
-Use this skill for projects based on the `wordpress-container` `templates/jcore3` template. Ignore other templates unless the user explicitly asks.
+Use this skill for Wordpress JCORE project development and for finding where code/config is located.
 
 ## Use this skill when
 
@@ -40,8 +40,7 @@ When orienting in a repository, inspect in this order:
 3. `composer.json` for installed JCORE modules/plugins and PHP platform constraints.
 4. `wp-content/mu-plugins/module-loader.php` for autoload bootstrap behavior.
 5. `package.json`, `Makefile`, and workspace config for frontend/tooling workflows.
-6. `wp-content/plugins/lohko/` for JCORE block runtime artifacts in the project.
-7. `/home/maxemilian/projects/jcore-lohko` for canonical Lohko block source code during development.
+6. `wp-content/plugins/lohko/` for WordPress Gutenberg blocks in the project.
 8. `wp-content/` for project-specific plugin or theme customizations.
 
 ## Development workflow
